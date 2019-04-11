@@ -148,7 +148,27 @@
             <p>Создать веб-страницу с веб-формой, содержащей элементы управления
                 в соответствии с вариантом. Предусмотреть проверку корректности данных.
                 Обязательно должна быть кнопка, очищающая данные формы.</p>
-                <img src="images/Образец веб-формы.png" width="550">
+            <img src="images/Образец веб-формы.png" width="550">
+            <form name="info_about_book">
+                <fieldset>
+                    <legend>Выходные данные о книге</legend>
+                    <p><label for="name">Авторы</label></p><input type="text" id="authors">
+                    <p><label for="name">Название</label></p><input type="text" id="title">
+                    <p><label for="name">Издательство</label></p><input type="text" id="publisher">
+                    <p><label for="name">Город</label></p><input type="text" id="city">
+                    <p><label for="name">Год</label></p><input type="date" id="year">
+                    <p><label for="name">Количество страниц</label></p><input type="number" id="number_of_pages">
+                    <p><label for="name">Раздел библиотеки</label></p><input type="text" id="section">
+                    <p><label for="name">Наличие книги</label></p>Да<input type="radio" id="availability"></p>Нет<input type="radio" id="availability">
+                    <p><label for="name">Оценка</label></p><input type="number" id="assessment">
+                </fieldset>
+                <p><input type="reset" value="Очистить"></p>
+            </form>
+        </li>
+        <li>
+            <p>Внедрить аудио- и видеофайлы</p>
+            <audio src="audio/Ludovico Einaudi - Fly.mp3" controls></audio>
+            <video src="video/Видео 2.mp4" controls width="500"></video>
         </li>
     </ol>
 
