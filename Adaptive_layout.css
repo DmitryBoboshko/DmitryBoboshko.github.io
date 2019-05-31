@@ -1,0 +1,142 @@
+/* .flexbox-layout */
+
+.flexbox-layout__section {
+    display: flex;
+}
+
+.flexbox-layout__header,
+.flexbox-layout__section-main,
+.flexbox-layout__section-nav,
+.flexbox-layout__section-aside,
+.flexbox-layout__footer {
+    padding: 10px;
+}
+
+.flexbox-layout {
+    margin-bottom: 150px;
+}
+.flexbox-layout__section-nav-h2,
+.flexbox-layout__section-main-h2,
+.flexbox-layout__section-aside-h2 {
+    word-wrap: break-word;
+}
+
+.flexbox-layout__header {
+    height: 10vh;
+    background: lightgrey;
+}
+
+.flexbox-layout__section-nav {
+    height: 40vh;
+    width: 10vw;
+    /* min-width: 120px; */
+    background: springgreen;
+}
+
+
+.flexbox-layout__section-main {
+    height: 70vh;
+    width: 60vw;
+    /* min-width: 150px; */
+    background: aqua;
+}
+
+.flexbox-layout__section-aside {
+    height: 25vh;
+    width: 30vw;
+    /* min-width: 250px; */
+    background: darkorchid;
+}
+
+.flexbox-layout__footer {
+    height: 10vh;
+    background: grey;
+}
+
+/* .flexbox-layout end */
+
+/* .grid-layout */
+
+.grid-layout__section {
+    display: grid;
+    grid-template: repeat(5, 1fr);
+    grid-template-rows: 10vh 4fr 1fr 1fr 10vh;
+    grid-template-areas: "h h h h h"
+                         "m m m m m"
+                         "n n n a a"
+                         "u u u a a"
+                         "f f f f f";
+}
+
+.grid-layout__section-header,
+.grid-layout__section-main,
+.grid-layout__section-nav,
+.grid-layout__section-aside,
+.grid-layout__section-footer {
+    padding: 10px;
+}
+
+.grid-layout {
+    margin-bottom: 150px;
+}
+
+.grid-layout__section-header {
+    /* height: 10vh; */
+    grid-area: h;
+    background: lightgrey;
+}
+
+.grid-layout__section-nav {
+    /* height: 40vh; */
+    /* width: 10vw; */
+    /* min-width: 120px; */
+    grid-area: n;
+    background: springgreen;
+}
+
+.grid-layout__section-main {
+    /* height: 70vh; */
+    /* width: 60vw; */
+    /* min-width: 150px; */
+    grid-area: m;
+    background: aqua;
+}
+
+.grid-layout__section-aside {
+    /* height: 25vh; */
+    /* width: 30vw; */
+    /* min-width: 250px; */
+    grid-area: a;
+    background: darkorchid;
+}
+
+.grid-layout__section-footer {
+    /* height: 10vh; */
+    grid-area: f;
+    background: grey;
+}
+
+/* .grid-layout end */
+
+/* .adaptive-layout */
+
+.adaptive-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+    background: lightblue;
+    border-radius: 8px;
+}
+
+.adaptive-layout__item {
+    min-height: 250px;
+    min-width: 250px;
+    text-align: center;
+    font-size: 13em;
+    font-weight: 600;
+    background: coral;
+    border-radius: 8px;
+    margin: 25px;
+}
