@@ -1,23 +1,22 @@
+.container {
+    margin-bottom: 150px;
+}
+
 /* .flexbox-layout */
 
 .flexbox-layout__section {
     display: flex;
 }
 
-.flexbox-layout__header,
-.flexbox-layout__section-main,
-.flexbox-layout__section-nav,
-.flexbox-layout__section-aside,
-.flexbox-layout__footer {
+.flexbox-layout__header, .flexbox-layout__section-main, .flexbox-layout__section-nav, .flexbox-layout__section-aside, .flexbox-layout__footer {
     padding: 10px;
 }
 
-.flexbox-layout {
+/* .flexbox-layout {
     margin-bottom: 150px;
-}
-.flexbox-layout__section-nav-h2,
-.flexbox-layout__section-main-h2,
-.flexbox-layout__section-aside-h2 {
+} */
+
+.flexbox-layout__section-nav-h2, .flexbox-layout__section-main-h2, .flexbox-layout__section-aside-h2 {
     word-wrap: break-word;
 }
 
@@ -32,7 +31,6 @@
     /* min-width: 120px; */
     background: springgreen;
 }
-
 
 .flexbox-layout__section-main {
     height: 70vh;
@@ -61,24 +59,16 @@
     display: grid;
     grid-template: repeat(5, 1fr);
     grid-template-rows: 10vh 4fr 1fr 1fr 10vh;
-    grid-template-areas: "h h h h h"
-                         "m m m m m"
-                         "n n n a a"
-                         "u u u a a"
-                         "f f f f f";
+    grid-template-areas: "h h h h h" "m m m m m" "n n n a a" "u u u a a" "f f f f f";
 }
 
-.grid-layout__section-header,
-.grid-layout__section-main,
-.grid-layout__section-nav,
-.grid-layout__section-aside,
-.grid-layout__section-footer {
+.grid-layout__section-header, .grid-layout__section-main, .grid-layout__section-nav, .grid-layout__section-aside, .grid-layout__section-footer {
     padding: 10px;
 }
 
-.grid-layout {
+/* .grid-layout {
     margin-bottom: 150px;
-}
+} */
 
 .grid-layout__section-header {
     /* height: 10vh; */
@@ -126,13 +116,12 @@
     justify-content: start;
     align-content: center;
     flex-wrap: wrap;
-    background: lightblue;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 .adaptive-layout__item {
-    min-height: 250px;
-    min-width: 250px;
+    min-height: 300px;
+    min-width: 300px;
     text-align: center;
     font-size: 13em;
     font-weight: 600;
@@ -140,3 +129,37 @@
     border-radius: 8px;
     margin: 25px;
 }
+
+@media screen and (max-width: 375px) {
+    .adaptive-layout {
+        background: lightsteelblue;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .adaptive-layout {
+        background: lightseagreen;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .adaptive-layout {
+        background: lightgreen;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .adaptive-layout {
+        background: lightblue;
+    }
+}
+
+/* .adaptive-layout end */
+
+/* sass-layout start */
+
+.sass-layout__a {
+    font-size: 16pt;
+}
+
+/* .sass-layout end */

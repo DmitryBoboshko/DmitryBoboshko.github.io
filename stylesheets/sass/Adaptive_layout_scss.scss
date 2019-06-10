@@ -1,0 +1,36 @@
+$layout-xlarge-color: lightblue;
+$layout-large-color: lightgreen;
+$layout-medium-color: lightseagreen;
+$layout-small-color: lightsteelblue;
+
+%flex-row-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.scss-layout {
+    @extend %flex-row-center;
+    background-color: $layout-xlarge-color;
+}
+
+@media only screen and (max-width:1024px) {
+    .scss-layout {
+        background-color: $layout-large-color;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .scss-layout {
+        background-color: $layout-medium-color;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .scss-layout {
+        background-color: $layout-small-color;
+    }
+}
+
+@import 'scss-layout__item';

@@ -1,0 +1,15 @@
+.body ul {
+  color: rebeccapurple;
+}
+.body a {
+  color: aliceblue;
+}
+.body li {
+  color: aliceblue;
+}
+.body h1 {
+  color: red;
+  padding: inherit;
+}
+
+/*# sourceMappingURL=output.css.map */

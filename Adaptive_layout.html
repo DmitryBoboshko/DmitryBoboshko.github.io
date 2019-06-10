@@ -5,12 +5,12 @@
 <head>
     <meta charset="utf-8">
     <title>Адаптивная вёрстка на CSS с использованием Flexbox, Grid и медиа-запросов</title>
-    <link href="Adaptive_layout.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/Adaptive_layout.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!-- Задание 1. Вёрстка макета с использованием Flexbox -->
-    <div class="flexbox-layout">
+    <!-- Задание 1. Вёрстка макета с использованием Flexbox. -->
+    <div class="flexbox-layout container">
         <header class="flexbox-layout__header">
             <h2 class="flexbox-layout__header-h2">Header</h2>
         </header>
@@ -46,8 +46,8 @@
         </footer>
     </div>
 
-    <!-- Задание 2. Вёрстка макета с использованием Grid -->
-    <div class="grid-layout">
+    <!-- Задание 2. Вёрстка макета с использованием Grid. -->
+    <div class="grid-layout container">
         <section class="grid-layout__section">
             <header class="grid-layout__section-header">
                 <h2 class="grid-layout__section-header-h2">Header</h2>
@@ -83,12 +83,17 @@
         </section>
     </div>
 
-    <!-- Задание 3. Вёрстка макета с изменяемыми параметрами фона и размеров блоков -->
-    <div class="adaptive-layout">
+    <!-- Задание 3. Вёрстка макета с изменяемыми параметрами фона и размеров блоков. -->
+    <div class="adaptive-layout container">
         <div class="adaptive-layout__item">1</div>
         <div class="adaptive-layout__item">2</div>
         <div class="adaptive-layout__item">3</div>
         <div class="adaptive-layout__item">4</div>
         <div class="adaptive-layout__item">5</div>
+    </div>
+
+    <!-- Задание 4. Возможности SASS(SCSS): переменные, вложения, вычисления, @extend, примеси. -->
+    <div class="sass-layout container">
+        <a class="sass-layout__a" href="Adaptive_layout_scss.html">Возможности SASS</a>
     </div>
 </body>
