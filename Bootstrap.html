@@ -123,19 +123,19 @@
                     </tr>
                     <tr class="table-secondary">
                         <th scope="row">Класс 2</th>
-                        <td>Показывает нейтральное информативное изменение</td>
+                        <td>Изменяет цвет строки или ячейки при наведении</td>
                     </tr>
                     <tr class="table-danger">
                         <th scope="row">Класс 3</th>
-                        <td>Показывает нейтральное информативное изменение</td>
+                        <td>Показывает опасное действие</td>
                     </tr>
                     <tr class="table-warning">
                         <th scope="row">Класс 4</th>
-                        <td>Показывает нейтральное информативное изменение</td>
+                        <td>Показывает предупреждения</td>
                     </tr>
                     <tr class="table-success">
                         <th scope="row">Класс 5</th>
-                        <td>Показывает нейтральное информативное изменение</td>
+                        <td>Показывает успешное действие</td>
                     </tr>
                 </tbody>
             </table>
@@ -143,8 +143,8 @@
         <h3 class="tasks__task-header container">Задание 4</h3>
         <div class="tasks__task4 container">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
                     Выпадающее меню
                 </button>
                 <div class="dropdown-menu">
@@ -158,6 +158,170 @@
                     <button class="dropdown-item" type="button">Пункт 2 второго меню</button>
                 </div>
             </div>
+        </div>
+        <h3 class="tasks__task-header container">Задание 5</h3>
+        <div class="tasks__task5 container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link active" href="#">Первая</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Вторая</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Третья</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#">Первая</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Вторая</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Третья</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#">Первая</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Вторая</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Третья</a>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item" type="button">Первый</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3 class="tasks__task-header container">Задание 6</h3>
+        <div class="tasks__task6 container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="alert alert-success">Успех</div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="alert alert-info">Информация</div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="alert alert-warning">Предупреждение</div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="alert alert-danger">Опасность</div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:60%; height: 20px;" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                            role="progressbar" style="width:40%; height: 20px;" aria-valuenow="40" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width:20%;" aria-valuenow="20"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width:10%;" aria-valuenow="10"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="tasks__task-header container">Задание 7</h3>
+        <div class="tasks__task7 container">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">Стандартная панель</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card alert-light m-3">
+                        <div class="card-header">Панель с простым заголовком</div>
+                        <div class="card-body">Содержимое панели</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card alert-light m-3">
+                        <div class="card-header">
+                            <h3>Заголовок панели из тега H3</h3>
+                        </div>
+                        <div class="card-body">Содержимое панели</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card alert-primary m-3">
+                        <div class="card-header">panel-primary</div>
+                        <div class="card-body">panel-primary</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card alert-warning m-3">
+                        <div class="card-header">panel-warning</div>
+                        <div class="card-body">panel-warning</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card alert-success m-3">
+                        <div class="card-header">panel-success</div>
+                        <div class="card-body">panel-success</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card alert-danger m-3">
+                        <div class="card-header">panel-danger</div>
+                        <div class="card-body">panel-danger</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card alert-info m-3">
+                        <div class="card-header">panel-info</div>
+                        <div class="card-body">panel-info</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="tasks__task-header container">Задание 8</h3>
+        <div class="tasks__task8 container">
+            <form>
+                <legend class="legend">Входные данные о книге</legend>
+                <label for="authors">Авторы</label>
+                <input class="form-control" type="text" id="authors" rows="1"></input>
+                <label for="title">Название</label>
+                <input class="form-control" type="text" id="title" rows="1"></input>
+                <label for="publisher">Издательство</label>
+                <input class="form-control" type="text" id="publisher" rows="1"></input>
+                <label for="city">Город</label>
+                <input class="form-control" type="text" id="city" rows="1"></input>
+                <label for="year">Год</label>
+                <input class="form-control" type="date" id="year"></input>
+                <label for="number_of_pages">Количество страниц</label>
+                <input class="form-control" type="number" id="number_of_pages"></input>
+                <label for="section">Раздел библиотеки</label>
+                <input class="form-control" type="text" id="section"></input>
+                <label for="availability">Наличие книги</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="availability-status" id="availability-yes"
+                        value="yes" checked></input>
+                    <label class="form-check-label" for="availability-yes">Да</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="availability-status" id="availability-no"
+                        value="no"></input>
+                    <label class="form-check-label" for="availability-no">Нет</label>
+                </div>
+                <label for="assessment">Оценка</label>
+                <select class="form-control" type="number" id="assessment">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <button class="btn btn-primary mt-3" type="reset">Очистить</button>
+            </form>
         </div>
     </div>
 
