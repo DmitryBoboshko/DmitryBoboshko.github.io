@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="svg.js"></script>
+    <title>SVG</title>
+</head>
+
+<body onload="draw()">
+    <h1>Графика для WEB</h1>
+    <div class="task1">
+        <h2>Задание 1</h2>
+        <p>Вывести на веб-страницу рисунок в соответствии с номером варианта. Для вывода рисунка использовать SVG. Не
+            загружать готовое изображение.</p>
+        <img style="display: block" src="images/svg1.png">
+        <svg width="300" height="200">
+            <rect width="250" height="150" x="25" y="30" style="fill: none; stroke: #888888; stroke-width: 4"></rect>
+            <rect width="20" height="30" x="60" y="20" style="fill: white; stroke: #888888; stroke-width: 4"></rect>
+            <rect width="20" height="30" x="220" y="20" style="fill: white; stroke: #888888; stroke-width: 4"></rect>
+            <line x1="25" y1="60" x2="275" y2="60" stroke="#888888" stroke-width="3"></line>
+            <rect width="40" height="40" x="50" y="75" style="fill: none; stroke: #888888; stroke-width: 3"></rect>
+            <rect width="40" height="40" x="130" y="75" style="fill: none; stroke: #888888; stroke-width: 3"></rect>
+            <rect width="40" height="40" x="210" y="75" style="fill: none; stroke: #888888; stroke-width: 3"></rect>
+            <rect width="40" height="40" x="50" y="125" style="fill: none; stroke: #888888; stroke-width: 3"></rect>
+            <rect width="40" height="40" x="130" y="125" style="fill: none; stroke: #888888; stroke-width: 3"></rect>
+            <rect width="40" height="40" x="210" y="125" style="fill: none; stroke: #888888; stroke-width: 3"></rect>
+        </svg>
+    </div>
+    <div class="task2">
+        <h2>Задание 2</h2>
+        <p>Вывести на веб-страницу рисунок в соответствии с номером варианта. Для вывода рисунка использовать тег
+            canvas и соответствующие команды языка JavaScript. Не загружать готовое изображение.</p>
+        <img style="display: block" src="images/svg2.png">
+        <!-- <canvas id="tutorial" width="150" height="150"></canvas> -->
+        <!-- When no width and height attributes are specified, the canvas will initially be 300 pixels wide and 150 pixels high. -->
+        <canvas id="flag" style="border: 1px solid black;"></canvas>
+    </div>
+</body>
+
+</html>
