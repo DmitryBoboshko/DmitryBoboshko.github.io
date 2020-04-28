@@ -1,3 +1,3 @@
 Лабораторные работы
 
-[Посмотреть](DmitryBoboshko.github.io)
+[Посмотреть](https://dmitryboboshko.github.io/)
